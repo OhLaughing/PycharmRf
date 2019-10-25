@@ -1,0 +1,22 @@
+*** Settings ***
+Resource  setting.txt
+
+
+*** Variables ***
+${loginPageUrl}    http://10.XX.XX.232:9XX0/admin/index.do?index=1
+${validUsername}    helloworld
+${validloginPasswd}         adminpasswd
+
+
+*** Test Cases ***
+测试log
+    log  ${validUsername}
+
+
+测试add
+    ${result}   两个int相加  1  2
+    should be true  3   ${result}
+    LOG  'true test pass'
+    ${result1}   两个int相加  1  2
+    should not be true  4     ${result1}
+    LOG  'true test pass'

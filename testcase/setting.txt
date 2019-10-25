@@ -1,0 +1,8 @@
+*** Settings ***
+Library       ../service/math.py
+
+*** Keywords ***
+两个int相加
+    [Arguments]     ${a}    ${b}
+    ${result}   add     ${a}    ${b}
+    [Return]     ${result}

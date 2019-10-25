@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20191025 23:56:49.617" generator="Robot 3.0 (Python 2.7.12 on win32)">
+<suite source="D:\workspace\pythonGithub\PycharmRf\testcase\test.txt" id="s1" name="Test">
+<test id="s1-t1" name="测试log">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${validUsername}</arg>
+</arguments>
+<msg timestamp="20191025 23:56:49.654" level="INFO">helloworld</msg>
+<status status="PASS" endtime="20191025 23:56:49.654" starttime="20191025 23:56:49.654"></status>
+</kw>
+<status status="PASS" endtime="20191025 23:56:49.654" critical="yes" starttime="20191025 23:56:49.654"></status>
+</test>
+<test id="s1-t2" name="测试add">
+<kw name="两个int相加" library="setting">
+<arguments>
+<arg>1</arg>
+<arg>2</arg>
+</arguments>
+<assign>
+<var>${result}</var>
+</assign>
+<kw name="add">
+<arguments>
+<arg>${a}</arg>
+<arg>${b}</arg>
+</arguments>
+<assign>
+<var>${result}</var>
+</assign>
+<msg timestamp="20191025 23:56:49.654" level="FAIL">No keyword with name 'add' found.</msg>
+<status status="FAIL" endtime="20191025 23:56:49.654" starttime="20191025 23:56:49.654"></status>
+</kw>
+<status status="FAIL" endtime="20191025 23:56:49.654" starttime="20191025 23:56:49.654"></status>
+</kw>
+<status status="FAIL" endtime="20191025 23:56:49.654" critical="yes" starttime="20191025 23:56:49.654">No keyword with name 'add' found.</status>
+</test>
+<status status="FAIL" endtime="20191025 23:56:49.654" starttime="20191025 23:56:49.621"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="1">Critical Tests</stat>
+<stat fail="1" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="Test" pass="1">Test</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20191025 23:56:49.638" level="WARN">Imported library 'D:\workspace\pythonGithub\PycharmRf\service\math.py' contains no keywords.</msg>
+</errors>
+</robot>
