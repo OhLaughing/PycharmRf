@@ -1,4 +1,4 @@
 .idea/
-**/result/log.html
-**/result/output.xml
-**/result/report.html
+**/results/log.html
+**/results/output.xml
+**/results/report.html
