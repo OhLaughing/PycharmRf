@@ -15,8 +15,9 @@ ${validloginPasswd}         adminpasswd
 
 测试add
     ${result}   两个int相加  1  2
-    should be true  3   ${result}
+    should be equal as integers  3   ${result}
     LOG  'true test pass'
     ${result1}   两个int相加  1  2
-    should not be true  4     ${result1}
+    should not be equal as integers  4     ${result1}
     LOG  'true test pass'
+
