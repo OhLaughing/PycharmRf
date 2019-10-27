@@ -1,5 +1,5 @@
 *** Settings ***
-Library       ../service/math.py
+Library       ../service/mymath.py
 
 *** Keywords ***
 两个int相加
